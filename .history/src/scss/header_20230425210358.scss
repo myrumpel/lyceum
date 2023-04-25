@@ -77,23 +77,16 @@
 	}
 	&__span {
 		display: inline-block;
-		position: relative;
 	}
 	&__span:hover {
-		&::after {
-			content: '';
-			background-color: $bgAbsWhite;
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			height: 1px;
-		}
+		border-bottom: 1px solid white;
 	}
 	&__list-item:not(:last-child) {
 		margin-right: 2rem;
 	}
-
+	&__span:hover {
+		border-bottom: 1px solid white;
+	}
 	&__list-hide {
 		visibility: hidden;
 		overflow: hidden;

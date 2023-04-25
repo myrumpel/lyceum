@@ -75,25 +75,12 @@
 		cursor: default;
 		position: relative;
 	}
-	&__span {
-		display: inline-block;
-		position: relative;
-	}
-	&__span:hover {
-		&::after {
-			content: '';
-			background-color: $bgAbsWhite;
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			height: 1px;
-		}
+	&__list-item:hover {
+		text-decoration: underline;
 	}
 	&__list-item:not(:last-child) {
 		margin-right: 2rem;
 	}
-
 	&__list-hide {
 		visibility: hidden;
 		overflow: hidden;

@@ -24,6 +24,7 @@
 		outline: none;
 		width: 100%;
 		padding: 2px;
+
 		border-bottom: 1px solid $txBlack;
 	}
 	&__input-text::placeholder {
@@ -73,27 +74,12 @@
 		align-items: center;
 		min-height: 5rem;
 		cursor: default;
+		// padding: 8px;
 		position: relative;
-	}
-	&__span {
-		display: inline-block;
-		position: relative;
-	}
-	&__span:hover {
-		&::after {
-			content: '';
-			background-color: $bgAbsWhite;
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			height: 1px;
-		}
 	}
 	&__list-item:not(:last-child) {
 		margin-right: 2rem;
 	}
-
 	&__list-hide {
 		visibility: hidden;
 		overflow: hidden;
