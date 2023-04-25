@@ -1,0 +1,12 @@
+.tools-line {
+	height: 2rem;
+	background-color: $txWhite;
+}
+.eye,
+.search {
+	height: 1.3rem;
+	width: 1.3rem;
+}
+.tools-line__items {
+	display: flex;
+}

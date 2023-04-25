@@ -1,0 +1,78 @@
+.tools-line {
+	height: 2rem;
+	background-color: $bgAbsWhite;
+	&__items {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		svg:not(:last-child) {
+			margin-right: 2.5em;
+		}
+	}
+}
+.eye,
+.search {
+	height: 1.3rem;
+	width: 1.3rem;
+	cursor: pointer;
+}
+.logo {
+	height: 4em;
+	width: 6em;
+}
+.header-nav {
+	background-color: $primTif;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		min-height: 5rem;
+	}
+	&__list {
+		display: flex;
+		color: $bgAbsWhite;
+		font-size: 1em;
+		font-weight: 700;
+	}
+	&__list-item {
+		display: flex;
+		align-items: center;
+		min-height: 5rem;
+		cursor: default;
+		padding: 8px;
+		position: relative;
+		border: 1px solid red;
+	}
+	&__list-item:not(:last-child) {
+		margin-right: 2rem;
+	}
+	&__list-hide {
+		font-size: 0.75em;
+		font-weight: 400;
+		padding: 1em;
+		position: absolute;
+		right: 0;
+		top: 80%;
+		border-radius: 0.6em;
+		background-color: $bgAbsWhite;
+		color: $txBlack;
+		border: 1px solid blue;
+	}
+	&__list-link {
+		// height: 100%;
+		width: 100%;
+		display: inline-block;
+		border: 1px solid #000;
+	}
+	&__list-hide-item {
+		min-width: 13em;
+	}
+	&__list-link:not(:first-child) {
+		padding-top: 8px;
+	}
+	&__list-link:not(:last-child) {
+		padding-bottom: 8px;
+	}
+}

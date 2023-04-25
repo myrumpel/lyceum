@@ -1,0 +1,112 @@
+.tools-line {
+	height: 2rem;
+	background-color: $bgAbsWhite;
+	&__items {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		svg:not(:last-child) {
+			margin-right: 2.5em;
+		}
+	}
+	&__input-box {
+		margin-left: 2em;
+		display: flex;
+		width: 50%;
+		// border: 1px solid #000;
+	}
+	&__input-text {
+		outline: none;
+		width: 100%;
+		border-bottom: 1px solid $txBlack;
+	}
+	.search-fill {
+		position: relative;
+		bottom: -4px;
+		left: 8px;
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
+.eye,
+.search {
+	height: 1.3rem;
+	width: 1.3rem;
+	cursor: pointer;
+}
+.logo {
+	height: 4em;
+	width: 6em;
+}
+.header-nav {
+	background-color: $primTif;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		min-height: 5rem;
+	}
+	&__list {
+		display: flex;
+		color: $bgAbsWhite;
+		font-size: 1em;
+		font-weight: 700;
+	}
+	&__list-item {
+		display: flex;
+		align-items: center;
+		min-height: 5rem;
+		cursor: default;
+		padding: 8px;
+		position: relative;
+	}
+	&__list-item:not(:last-child) {
+		margin-right: 2rem;
+	}
+	&__list-hide {
+		visibility: hidden;
+		overflow: hidden;
+		font-size: 0.75em;
+		font-weight: 400;
+		position: absolute;
+		right: 0;
+		top: 80%;
+		border-radius: 0.6em;
+		color: $txBlack;
+		background-color: $bgAbsWhite;
+		box-shadow: $shadowAdd;
+		transform: scaleY(0%);
+		opacity: 0;
+		will-change: auto;
+	}
+	&__list-link {
+		width: 100%;
+		display: inline-block;
+		padding: 8px 16px;
+		line-height: 1.1em;
+		transition: background-color 0.2s ease-in, color 0.1s ease-in,
+			before 0.2s ease-in, transform 0.2s ease-in;
+		transform: translateX(-4px);
+	}
+	&__list-link:hover {
+		background-color: $bgAdd;
+		color: $primTif;
+		position: relative;
+		font-weight: 700;
+		transform: translateX(0px);
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 2px;
+			background-color: $primTif;
+		}
+	}
+	&__list-hide-item {
+		min-width: 13em;
+	}
+}

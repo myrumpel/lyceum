@@ -1,0 +1,23 @@
+.tools-line {
+	height: 2rem;
+	background-color: $txWhite;
+	&__items {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		svg:not(:last-child) {
+			margin-right: 2.5em;
+		}
+	}
+}
+.eye,
+.search {
+	height: 1.3rem;
+	width: 1.3rem;
+	cursor: pointer;
+}
+.logo {
+	height: 4em;
+	width: 6em;
+}

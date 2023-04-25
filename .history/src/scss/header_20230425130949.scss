@@ -1,0 +1,42 @@
+.tools-line {
+	height: 2rem;
+	background-color: $txWhite;
+	&__items {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		svg:not(:last-child) {
+			margin-right: 2.5em;
+		}
+	}
+}
+.eye,
+.search {
+	height: 1.3rem;
+	width: 1.3rem;
+	cursor: pointer;
+}
+.logo {
+	height: 4em;
+	width: 6em;
+}
+.header-nav {
+	background-color: $primTif;
+	min-height: 5rem;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+	}
+	&__list {
+		display: flex;
+		font-size: $fz-20;
+		font-weight: 700;
+		color: $txWhite;
+		border: 1px solid #000;
+	}
+	&__list-item:not(:last-child) {
+		margin-right: 2em;
+	}
+}
